@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+padding: 0;
+border-radius: border-box;
+}
+
+h1{
+    color: antiquewhite;
+}
+
+@media screen and (max-width: 991px) {
+    h1{
+        color: brown;
+    }
+    img{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    h1{
+        color: #f5f5f5;
+
+    }
+    img{
+        display: initial;
+    }
+}
+/* Desktop First >= 992px */

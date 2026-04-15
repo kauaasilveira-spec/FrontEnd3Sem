@@ -1,0 +1,200 @@
+/* Imports de fontes */
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url(../fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #50093b, #ae924f80);;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: PlayfairDisplay, serif;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container--flex--column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.header__title {
+  color: #ded27c;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.header__text {
+  color: #fff;
+  font-weight: 300;
+}
+
+.contact-form {
+  padding: 20px 10px;
+}
+
+.contact-form__linha {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.contact-form__col-a {
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+.contact-form__col-b {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.contact-form__input--metade {
+  width: 49%;
+}
+.contact-form__input--inteiro {
+  width: 100%;
+}
+.contact-form__input--terco {
+  width: 32%;
+}
+.contact-form__input--cep {
+  width: 20%;
+}
+.contact-form__input--rua {
+  width: 56%;
+}
+.contact-form__input--num {
+  width: 20%;
+}
+
+.contact-form__label {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.contact-form__input {
+  height: 35px;
+  color: #000;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  transition:
+    background-color 0.4s,
+    color 0.4s;
+}
+
+.contact-form__textarea {
+  height: 120px;
+  resize: vertical;
+  padding-top: 10px;
+}
+
+select.contact-form__input {
+  cursor: pointer;
+}
+
+.contact-form__input:focus {
+  background-color: #274148;
+  color: white;
+}
+
+.contact-form__btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 2% 19%;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-form__btn:hover {
+  background-color: #c35114;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* BreakPoints */
+@media screen and (max-width: 991px) {
+  .contact-form__col-a {
+    width: 20%;}
+  }
+  .contact-form__col-b {
+    width: 80%;
+  }
+
+  .header__logo {
+    width: 120px;
+  }
+
+  .header__text {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .contact-form__label {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+
+  .header__text {
+    font-size: 15px;
+    text-align: center;
+  }
+  .contact-form__linha {
+    justify-content: center; 
+    flex-direction: column;
+  }
+  .contact-form__col-a,
+  .contact-form__col-b {
+    width: 100%;
+  }
+  .contact-form__col-a {   
+    display: none;
+    margin-bottom: 5px;
+  }
+  
+
+  .contact-form__input--metade,
+  .contact-form__input--terco,
+  .contact-form__input--cep,
+  .contact-form__input--rua,
+  .contact-form__input--num {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .contact-form__col-b {
+    flex-direction: column;
+  }
+}
+
