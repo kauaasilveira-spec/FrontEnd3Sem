@@ -1,0 +1,76 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "contatos": [
+    {
+      "id": "1",
+      "nome": "kaua",
+      "sobrenome": "chupingole",
+      "email": "kaua.chupingole@example.com"
+    },
+    {
+      "nome": "Roberta",
+      "sobrenome": "Pupi",
+      "email": "roberta.pupi@example.com",
+      "id": "zTuDi2RKTGQ"
+    },
+    {
+      "nome": "Gabriel",
+      "sobrenome": "Caetano",
+      "email": "gabriel.caetano@example.com",
+      "id": "SNttIZjS_lY"
+    },
+    {
+      "nome": "Marcelo",
+      "sobrenome": "Robusto",
+      "email": "marcelo.robusto@example.com",
+      "id": "wtwZkBx-xto"
+    },
+    {
+      "nome": "Dromedario",
+      "sobrenome": "Difé",
+      "email": "dromedario.dife@example.com",
+      "id": "ee5RnKsEDvk"
+    }
+  ],
+  "produtos": [
+    {
+      "nome": "Mousepad",
+      "quantidade": "12",
+      "preco": "60",
+      "id": "C52s9tjqQds"
+    },
+    {
+      "nome": "Caixa de nutella B-Ready",
+      "quantidade": "12",
+      "preco": "80",
+      "id": "Oc7E9IHfTx4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

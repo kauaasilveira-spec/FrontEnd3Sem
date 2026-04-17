@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ContactForm - Projeto SENAI</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container container--flex--column">
-        <img class="header__logo" src="./css/Images/Darwin GIF - Darwin - Discover & Share GIFs.gif" alt="Logo" />
+        <img class="header__logo" src="./Images/Darwin GIF - Darwin - Discover & Share GIFs.gif" alt="Logo" />
         <h1 class="header__title">Contact Form</h1>
         <p class="header__text">
           Insira os dados do contato e clique em cadastrar!
@@ -97,124 +97,8 @@
         </form>
       </div>
     </main>
-    <script>
-      function minhaFuncao() {
-        let nome = document.getElementById('nome').value.trim();
-        let sobrenome = document.getElementById('sobrenome').value.trim();
-        let email = document.getElementById('email').value.trim();
-        let telefone = document.getElementById('telefone').value.trim();
-        let cep = document.getElementById('cep').value.trim();
-        let rua = document.getElementById('rua').value.trim();
-        let numero = document.getElementById('numero').value.trim();
-        let apto = document.getElementById('apto').value.trim();
-        let bairro = document.getElementById('bairro').value.trim();
-        let cidade = document.getElementById('cidade').value.trim();
-        let estado = document.getElementById('estado').value.trim();
-        let mensagem = document.getElementById('mensagem').value.trim();
-
-        alert(nome.length);
-
-       /* console.log
-        (`Aluno: ${nome} ${sobrenome} 
-          Email: ${email} 
-          Telefone: ${telefone} 
-          Endereço: ${rua}, ${numero}, ${apto},
-           ${bairro}, ${cidade} - ${estado}
-          CEP: ${cep}
-          Mensagem: ${mensagem}`);*/
-
-
-        if(nome.length ==0){
-          FormError("nome");
-        }
-        else{
-          ReiniciaBorda("nome");
-        }
-
-        if(sobrenome.length ==0){
-          FormError("sobrenome");
-        }
-        else{
-          ReiniciaBorda("sobrenome");
-        }
-
-        if(email.length ==0){
-          FormError("email");
-        }
-        else{
-          ReiniciaBorda("email");
-        }
-
-         if(telefone.length ==0){
-          FormError("telefone");
-        }
-        else{
-          ReiniciaBorda("telefone");
-        }
-
-         if(cep.length ==0){
-          FormError("cep");
-        }
-        else{
-          ReiniciaBorda("cep");
-        }
-
-         if(rua.length ==0){
-          FormError("rua");
-        }
-        else{
-          ReiniciaBorda("rua");
-        }
-
-         if(numero.length ==0){
-          FormError("numero");
-        }
-        else{
-          ReiniciaBorda("numero");
-        }
-
-         if(apto.length ==0){
-          FormError("apto");
-        }
-        else{
-          ReiniciaBorda("apto");
-        }
-
-         if(bairro.length ==0){
-          FormError("bairro");
-        }
-        else{
-          ReiniciaBorda("bairro");
-        }
-
-         if(cidade.length ==0){
-          FormError("cidade");
-        }
-        else{
-          ReiniciaBorda("cidade");
-        }
-
-         if(estado.length ==0){
-          FormError("estado");
-        }
-        else{
-          ReiniciaBorda("estado");
-        }
-
-         if(mensagem.length ==0){
-          FormError("mensagem");
-        }
-        else{
-          ReiniciaBorda("mensagem");
-        }
-
-        function FormError(fildId){
-          document.getElementById(fildId).style.border = "1px solid red";
-        }
-        function ReiniciaBorda(fildId){
-          document.getElementById(fildId).style.border = "3px solid green";
-        }
-      }
+    <script src="js/script.js">
+    
     </script>
   </body>
 </html>
